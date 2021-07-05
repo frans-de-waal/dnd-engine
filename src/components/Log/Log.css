@@ -1,0 +1,29 @@
+.log {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: inset 0 0 5px grey;
+  padding: 0.4rem;
+  background-color: lightgray;
+  overflow-y: auto;
+}
+
+.log .entry {
+  background-color: var(--color-tertiary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 5px grey;
+}
+
+.log .entry:hover {
+  box-shadow: 0 0 7px var(--color-secondary);
+}
+
+.log .entry:not(:first-child) {
+  margin-top: 0.4rem;
+}
+
+.log .entry:first-child {
+  margin-top: auto !important; /* make the entries stick to the bottom (in stead of flex-end on container) */
+}

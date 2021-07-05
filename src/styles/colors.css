@@ -1,0 +1,10 @@
+:root {
+  /* pallete */
+  --color-primary: #042A2B;
+  --color-secondary: #C1292E;
+  --color-tertiary: #FDFFFC;
+
+  /* typography */
+  --color-font-light: #FDFFFC;
+  --color-font-dark: #020100;
+}

@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Vecna';
+  src: url('../assets/vecna/Vecna-BoldItalic.eot');
+  src: url('../assets/vecna/Vecna-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/vecna/Vecna-BoldItalic.woff2') format('woff2'),
+      url('../assets/vecna/Vecna-BoldItalic.woff') format('woff'),
+      url('../assets/vecna/Vecna-BoldItalic.ttf') format('truetype'),
+      url('../assets/vecna/Vecna-BoldItalic.svg#Vecna-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vecna';
+  src: url('../assets/vecna/Vecna.eot');
+  src: url('../assets/vecna/Vecna.eot?#iefix') format('embedded-opentype'),
+      url('../assets/vecna/Vecna.woff2') format('woff2'),
+      url('../assets/vecna/Vecna.woff') format('woff'),
+      url('../assets/vecna/Vecna.ttf') format('truetype'),
+      url('../assets/vecna/Vecna.svg#Vecna') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vecna';
+  src: url('../assets/vecna/Vecna-Bold.eot');
+  src: url('../assets/vecna/Vecna-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/vecna/Vecna-Bold.woff2') format('woff2'),
+      url('../assets/vecna/Vecna-Bold.woff') format('woff'),
+      url('../assets/vecna/Vecna-Bold.ttf') format('truetype'),
+      url('../assets/vecna/Vecna-Bold.svg#Vecna-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vecna';
+  src: url('../assets/vecna/Vecna-Italic.eot');
+  src: url('../assets/vecna/Vecna-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/vecna/Vecna-Italic.woff2') format('woff2'),
+      url('../assets/vecna/Vecna-Italic.woff') format('woff'),
+      url('../assets/vecna/Vecna-Italic.ttf') format('truetype'),
+      url('../assets/vecna/Vecna-Italic.svg#Vecna-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Draconis';
+  src: url('../assets/draconis/Draconis.eot');
+  src: url('../assets/draconis/Draconis.eot?#iefix') format('embedded-opentype'),
+      url('../assets/draconis/Draconis.woff2') format('woff2'),
+      url('../assets/draconis/Draconis.woff') format('woff'),
+      url('../assets/draconis/Draconis.ttf') format('truetype'),
+      url('../assets/draconis/Draconis.svg#Draconis') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Draconis';
+  src: url('../assets/draconis/Draconis-Italic.eot');
+  src: url('../assets/draconis/Draconis-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/draconis/Draconis-Italic.woff2') format('woff2'),
+      url('../assets/draconis/Draconis-Italic.woff') format('woff'),
+      url('../assets/draconis/Draconis-Italic.ttf') format('truetype'),
+      url('../assets/draconis/Draconis-Italic.svg#Draconis-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Draconis';
+  src: url('../assets/draconis/Draconis-Bold.eot');
+  src: url('../assets/draconis/Draconis-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/draconis/Draconis-Bold.woff2') format('woff2'),
+      url('../assets/draconis/Draconis-Bold.woff') format('woff'),
+      url('../assets/draconis/Draconis-Bold.ttf') format('truetype'),
+      url('../assets/draconis/Draconis-Bold.svg#Draconis-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Draconis';
+  src: url('../assets/draconis/Draconis-BoldItalic.eot');
+  src: url('../assets/draconis/Draconis-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/draconis/Draconis-BoldItalic.woff2') format('woff2'),
+      url('../assets/draconis/Draconis-BoldItalic.woff') format('woff'),
+      url('../assets/draconis/Draconis-BoldItalic.ttf') format('truetype'),
+      url('../assets/draconis/Draconis-BoldItalic.svg#Draconis-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* font family */
+  --font-primary: 'Draconis';
+  --font-secondary: 'Vecna';
+
+  /* size */
+  --font-sm: 0.5rem;
+  --font-md: 1rem;
+  --font-lg: 2rem;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.light {
+  color: var(--color-font-light);
+}
+
+.dark {
+  color: var(--color-font-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  margin: 0;
+}
+
+span {
+  font-size: large;
+}

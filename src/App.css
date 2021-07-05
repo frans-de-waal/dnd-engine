@@ -1,0 +1,39 @@
+.app {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header {
+  background-color: var(--color-primary);
+  padding: 1rem;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  background-color: var(--color-tertiary);
+  min-height: 0; /* fix to make not expand with children */
+}
+
+.footer {
+  background-color: var(--color-primary);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer button {
+  min-width: 3rem;
+}
+
+.footer button:not(:first-child) {
+  margin-left: 1rem;
+}
