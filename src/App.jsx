@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
 import { ActorList, DButton, Log } from './components'
-import { Actor } from './engine'
-import { CLASSES } from './data'
+import { Actor, Weapon } from './engine'
+import { CLASSES, WEAPONS } from './data'
 import { LogProvider } from './stores'
 
 const { FIGHTER, SORCERER, BARBARIAN, RANGER } = CLASSES
@@ -13,8 +13,13 @@ const actors = [
     levels: [FIGHTER, FIGHTER, FIGHTER],
     abilities: {
       strength: 17,
-      constitution: 14
-    }
+      constitution: 14,
+      dexterity: 13,
+      intelligence: 9,
+      wisdom: 10,
+      charisma: 14
+    },
+    weapons: [new Weapon(WEAPONS.MAUL), new Weapon(WEAPONS.LONGBOW)]
   }),
   new Actor({
     name: 'Sannie',

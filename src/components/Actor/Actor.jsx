@@ -24,20 +24,23 @@ export default function Actor ({
       <div className='abilities'>
         {Object.values(ABILITIES).map(renderAbility)}
       </div>
-      <div className='buttonRow'>
-        <button onClick={() => {
-          const { message } = actor.attack()
-          log(`<strong>${actor.name}</strong><br>${message}`)
-        }}
-        >Attack
-        </button>
-        <button onClick={() => {
-          const { message } = actor.damage()
-          log(`<strong>${actor.name}</strong><br>${message}`)
-        }}
-        >Damage
-        </button>
-      </div>
+      {actor.weapons.map(weapon => (
+        <div className='buttonRow' key={weapon.id}>
+          <h4 className='weaponName'>{weapon.name}</h4>
+          <button onClick={() => {
+            const { message } = actor.attack(weapon)
+            log(`<strong>${actor.name} (${weapon.name})</strong><br>${message}`)
+          }}
+          >Attack
+          </button>
+          <button onClick={() => {
+            const { message } = actor.damage(weapon)
+            log(`<strong>${actor.name} (${weapon.name})</strong><br>${message}`)
+          }}
+          >Damage
+          </button>
+        </div>
+      ))}
     </div>
   )
 }

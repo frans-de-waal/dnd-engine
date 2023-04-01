@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid'
+
 class Weapon {
   constructor ({
     name,
@@ -9,6 +11,7 @@ class Weapon {
     weight,
     cost
   }) {
+    this.id = uuidv4()
     this.name = name
     this.category = category
     this.type = type
